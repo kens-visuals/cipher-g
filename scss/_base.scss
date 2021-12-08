@@ -1,0 +1,56 @@
+$color-primary: hsl(355, 95%, 23%);
+$color-primary--dark: hsl(6, 94%, 6%);
+$color-secondary: hsl(191, 37%, 60%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgba($color-primary--dark, 0.5);
+  background-image: url('../f1dabb830221c167f3e28d27ca096fdc6a8a8575r1-444-250_00.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6rem;
+  font-family: 'Bungee Inline', cursive;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
