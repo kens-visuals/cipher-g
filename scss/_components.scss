@@ -27,7 +27,8 @@
     margin-left: 3rem;
     padding: 2rem;
     box-shadow: -20px 20px 10px $color-primary, -20px 20px 20px $color-primary,
-      -20px 20px 40px $color-primary;
+      -20px 20px 30px $color-primary, -20px 20px 40px $color-primary,
+      -20px 20px 50px $color-primary;
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -56,11 +57,12 @@
     transition: all 0.2s;
 
     &:focus-visible {
-      outline: 0.5rem solid $color-primary--dark;
+      outline: 0.5rem solid $color-tertiary;
     }
 
     &:disabled {
       color: $color-tertiary;
+      background-color: rgba($color-secondary--light, 0.5);
     }
   }
 
