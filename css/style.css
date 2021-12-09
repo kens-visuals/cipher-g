@@ -89,7 +89,7 @@ body {
   background-color: rgba(114, 3, 12, 0.4);
   border-radius: 1rem;
   padding: 4rem;
-  box-shadow: -2rem 2rem 10px #72030c, -2rem 2rem 20px #72030c, -2rem 2rem 40px #72030c;
+  box-shadow: -20px 20px 10px #72030c, -20px 20px 20px #72030c, -20px 20px 40px #72030c;
 }
 .cipher__form > *:not(:last-child) {
   margin-bottom: 2rem;

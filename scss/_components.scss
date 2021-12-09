@@ -23,8 +23,8 @@
     background-color: rgba($color-primary, 0.4);
     border-radius: 1rem;
     padding: 4rem;
-    box-shadow: -2rem 2rem 10px $color-primary, -2rem 2rem 20px $color-primary,
-      -2rem 2rem 40px $color-primary;
+    box-shadow: -20px 20px 10px $color-primary, -20px 20px 20px $color-primary,
+      -20px 20px 40px $color-primary;
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
