@@ -1,6 +1,8 @@
 $color-primary: hsl(355, 95%, 23%);
 $color-primary--dark: hsl(6, 94%, 6%);
 $color-secondary: hsl(191, 37%, 60%);
+$color-secondary--light: hsl(0, 0%, 100%);
+$color-tertiary: hsl(0, 0%, 0%);
 
 *,
 *::before,
@@ -45,12 +47,14 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: rgba($color-primary--dark, 0.5);
-  background-image: url('../f1dabb830221c167f3e28d27ca096fdc6a8a8575r1-444-250_00.png');
+  color: $color-secondary--light;
+  background-color: $color-primary--dark;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.6rem;
   font-family: 'Bungee Inline', cursive;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
 }

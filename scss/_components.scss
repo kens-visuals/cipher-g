@@ -1,19 +1,93 @@
 @use './base' as *;
 
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-  margin-block: 1rem;
-
-  &__link:link,
-  &__link:visited {
-    text-transform: uppercase;
-    // color: $color-primary--light;
-    transition: all 0.3s;
+.cipher {
+  &__main {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
-  &__link:hover,
-  &__link:active {
-    // color: $color-secondary;
+  &__heading {
+    color: $color-primary;
+    font-size: clamp(5.7rem, 13vw, 10rem);
+    font-weight: normal;
+    margin-bottom: 5rem;
+  }
+
+  &__form {
+    background-color: $color-primary;
+    border-radius: 1rem;
+    padding: 4rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__label {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    background-color: rgba($color-secondary--light, 0.5);
+    font-size: 2rem;
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    transition: all 0.2s;
+
+    &:focus-visible {
+      outline: 0.5rem solid $color-primary--dark;
+    }
+
+    &:disabled {
+      color: $color-tertiary;
+    }
+  }
+
+  &__btn {
+    width: 47%;
+    color: $color-secondary--light;
+    background: unset;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    border: 0.3rem solid $color-tertiary;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &--reset {
+      &:hover {
+        color: rgba($color-secondary--light, 0.7);
+      }
+    }
+
+    &--copy {
+      background-color: $color-secondary;
+
+      &:hover {
+        background-color: rgba($color-secondary, 0.7);
+      }
+    }
+  }
+
+  &__footer {
+    font-size: 1rem;
+    text-align: center;
+    margin-block: 1rem;
+
+    &-link:link,
+    &-link:visited {
+      text-transform: uppercase;
+      color: $color-primary;
+      transition: all 0.3s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: $color-secondary--light;
+    }
   }
 }

@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+  background-color: #1e0401;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6rem;
+  font-family: "Bungee Inline", cursive;
+  text-rendering: optimizeSpeed;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cipher__wrapper-input {
+  display: flex;
+  flex-direction: column;
+}
+.cipher__wrapper-btns {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.cipher__main {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cipher__heading {
+  color: #72030c;
+  font-size: clamp(5.7rem, 13vw, 10rem);
+  font-weight: normal;
+  margin-bottom: 5rem;
+}
+.cipher__form {
+  background-color: #72030c;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+.cipher__form > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.cipher__label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cipher__input {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  border: 0;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.cipher__input:focus-visible {
+  outline: 0.5rem solid #1e0401;
+}
+.cipher__input:disabled {
+  color: black;
+}
+.cipher__btn {
+  width: 47%;
+  color: white;
+  background: unset;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  border: 0.3rem solid black;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cipher__btn--reset:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.cipher__btn--copy {
+  background-color: #73b1bf;
+}
+.cipher__btn--copy:hover {
+  background-color: rgba(115, 177, 191, 0.7);
+}
+.cipher__footer {
+  font-size: 1rem;
+  text-align: center;
+  margin-block: 1rem;
+}
+.cipher__footer-link:link, .cipher__footer-link:visited {
+  text-transform: uppercase;
+  color: #72030c;
+  transition: all 0.3s;
+}
+.cipher__footer-link:hover, .cipher__footer-link:active {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

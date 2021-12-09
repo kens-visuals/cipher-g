@@ -24,19 +24,43 @@
 
         <form action="#" class="cipher__form">
           <div class="cipher__wrapper-input">
-            <label for="name">1npu7</label>
-            <input type="text" name="input" id="input" required />
+            <label for="name" class="cipher__label">1npu7</label>
+            <input
+              type="text"
+              name="input"
+              id="input"
+              class="cipher__input js-input"
+              required
+            />
           </div>
           <div class="cipher__wrapper-input">
-            <label for="email">0u7pu7 </label>
-            <input type="text" name="output" id="output" />
+            <label for="email" class="cipher__label">0u7pu7</label>
+            <input
+              type="text"
+              name="output"
+              id="output"
+              class="cipher__input js-input"
+              disabled
+            />
           </div>
-          <div class="form-example">
-            <button class="cipher__btn cipher__btn--reset">r3s37</button
-            ><button class="cipher__btn cipher__btn--copy">c0py</button>
+
+          <div class="cipher__wrapper-btns">
+            <button class="cipher__btn cipher__btn--reset js-btn">r3s37</button>
+            <button class="cipher__btn cipher__btn--copy js-btn">c0py</button>
           </div>
         </form>
       </main>
     </div>
+
+    <footer class="cipher__footer">
+      Coded by
+      <a
+        class="cipher__footer-link"
+        href="https://github.com/kens-visuals"
+        target="_blank"
+      >
+        Kens-Visuals</a
+      >.
+    </footer>
   </body>
 </html>

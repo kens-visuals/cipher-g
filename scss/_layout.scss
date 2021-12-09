@@ -1,0 +1,20 @@
+.container {
+  width: 90%;
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cipher__wrapper {
+  &-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-btns {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+  }
+}
