@@ -11,14 +11,20 @@
   &__heading {
     color: $color-primary;
     font-size: clamp(5.7rem, 13vw, 10rem);
+    font-family: 'Bungee Shade', cursive;
     font-weight: normal;
     margin-bottom: 5rem;
+    text-shadow: 0 0 10px $color-primary, 0 0 20px $color-primary,
+      0 0 40px $color-primary;
   }
 
   &__form {
-    background-color: $color-primary;
+    border: 0.3rem solid $color-primary;
+    background-color: rgba($color-primary, 0.4);
     border-radius: 1rem;
     padding: 4rem;
+    box-shadow: -2rem 2rem 10px $color-primary, -2rem 2rem 20px $color-primary,
+      -2rem 2rem 40px $color-primary;
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -36,6 +42,7 @@
     border: 0;
     border-radius: 0.2rem;
     padding: 1rem;
+    caret-color: $color-primary;
     transition: all 0.2s;
 
     &:focus-visible {
