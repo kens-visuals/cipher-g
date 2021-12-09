@@ -11,12 +11,13 @@ const mrRobot = function (str) {
     .split(' ')
     .map((el) =>
       el
-        .replace(/A/gi, '4')
-        .replace(/E/gi, '3')
-        .replace(/I/gi, '1')
-        .replace(/O/gi, '0')
-        .replace(/S/gi, '5')
-        .replace(/T/gi, '7')
+        .replace(/A/g, '4')
+        .replace(/E/g, '3')
+        .replace(/G/g, '6')
+        .replace(/I/g, '1')
+        .replace(/O/g, '0')
+        .replace(/S/g, '5')
+        .replace(/T/g, '7')
     )
     .join(' ');
 };
