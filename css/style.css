@@ -132,6 +132,7 @@ body {
   background-color: rgba(242, 242, 242, 0.5);
   font-size: 2rem;
   border: 0;
+  outline: 0;
   border-radius: 0.2rem;
   padding: 1rem;
 }
