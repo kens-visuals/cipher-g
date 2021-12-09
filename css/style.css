@@ -147,7 +147,7 @@ body {
 .cipher__footer {
   font-size: 1rem;
   text-align: center;
-  margin-block: 1rem;
+  margin-bottom: 2rem;
 }
 .cipher__footer-link:link, .cipher__footer-link:visited {
   text-transform: uppercase;
