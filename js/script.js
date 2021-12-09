@@ -22,11 +22,12 @@ const mrRobot = function (str) {
 };
 
 const resetAll = () => inputs.forEach((input) => (input.value = ''));
-const copy = function () {
-  input.select();
-  input.setSelectionRange(0, 99999);
 
-  navigator.clipboard.writeText(input.value);
+const copy = function () {
+  output.select();
+  output.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(output.value);
 };
 
 input.addEventListener('input', (e) => mrRobot(e.target.value));
