@@ -53,7 +53,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 80rem;
   display: flex;
   align-items: center;
@@ -71,6 +71,7 @@ body {
 }
 
 .cipher__main {
+  width: 100%;
   margin: 5rem 0;
   display: flex;
   align-items: center;
@@ -78,27 +79,37 @@ body {
 }
 .cipher__heading {
   color: #72030c;
-  font-size: clamp(5.7rem, 13vw, 10rem);
+  font-size: clamp(2rem, 13vw, 10rem);
   font-family: "Bungee Shade", cursive;
   font-weight: normal;
   margin-bottom: 5rem;
   text-shadow: 0 0 10px #72030c, 0 0 20px #72030c, 0 0 40px #72030c;
 }
 .cipher__form {
+  width: 90%;
   border: 0.3rem solid #72030c;
   background-color: rgba(114, 3, 12, 0.4);
   border-radius: 1rem;
-  padding: 4rem;
+  margin-left: 3rem;
+  padding: 2rem;
   box-shadow: -20px 20px 10px #72030c, -20px 20px 20px #72030c, -20px 20px 40px #72030c;
 }
 .cipher__form > *:not(:last-child) {
   margin-bottom: 2rem;
+}
+@media (min-width: 810px) {
+  .cipher__form {
+    width: 100%;
+    padding: 4rem;
+    margin-left: 0;
+  }
 }
 .cipher__label {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .cipher__input {
+  width: 100%;
   background-color: rgba(242, 242, 242, 0.5);
   font-size: 2rem;
   border: 0;
